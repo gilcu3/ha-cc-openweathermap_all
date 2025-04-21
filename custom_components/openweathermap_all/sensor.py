@@ -18,8 +18,7 @@ DOMAIN = "owm2json"
 
 _LOGGER = logging.getLogger(__name__)
 
-SCAN_INTERVAL = timedelta(minutes=10)
-MIN_TIME_BETWEEN_UPDATES = timedelta(minutes=5)
+MIN_TIME_BETWEEN_UPDATES = timedelta(minutes=60)
 
 PLATFORM_SCHEMA = PLATFORM_SCHEMA.extend({
     vol.Required(CONF_API_KEY): cv.string,
@@ -187,7 +186,7 @@ class OwmPollutionSensor(Entity):
                 try:
                     self._state = float(owmData["onecall"]["current"]["uvi"])
                 except:
-                    _LOGGER.warning("Did not get proper reply from 'onecall'.")
+                    _LOGGER.debug("Did not get proper reply from 'onecall'.")
                     self._state = -1
                 
 

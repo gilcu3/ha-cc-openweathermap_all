@@ -1,10 +1,10 @@
 {
     "domain": "openweathermap_all",
     "name": "OpenWeatherMap All API",
-    "documentation": "https://github.com/viktak/ha-cc-openweathermap_all",
-    "issue_tracker": "https://github.com/viktak/ha-cc-openweathermap_all/issues",
+    "documentation": "https://github.com/gilcu3/ha-cc-openweathermap_all",
+    "issue_tracker": "https://github.com/gilcu3/ha-cc-openweathermap_all/issues",
     "dependencies": [],
-    "codeowners": ["@viktak"],
+    "codeowners": ["@gilcu3"],
     "requirements": ["owm2json==0.1.89"],
     "version": "0.0.1",
     "iot_class": "cloud_polling"

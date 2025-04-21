@@ -1,3 +1,14 @@
+# Simple fork for personal use
+
+## Changes
+
+- Minimal update interval to 60 minutes
+- Less verbose log when API call fails fro `uvi`
+
+
+<details>
+<summary>For more information see the original README below.</summary>
+
 ### Now OpenWeatherMap requires credit card information for using their APIs. I do not endorse this behaviour, so this component is now unfortunately shut down.
 
 
@@ -65,3 +76,4 @@ Please make sure to update tests as appropriate.
 
 ## License
 [GNU General Public License v3.0](https://choosealicense.com/licenses/gpl-3.0/)
+</details>
